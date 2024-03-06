@@ -52,13 +52,13 @@ public class UserController {
     public String join(JoinReqDto joinReqDto) {
 
         if (joinReqDto.getUsername() == null || joinReqDto.getUsername().isEmpty()) {
-            throw new CustomException("username을 입력해주세요", HttpStatus.BAD_REQUEST);
+            throw new CustomException("username 을 입력해주세요", HttpStatus.BAD_REQUEST);
         }
         if (joinReqDto.getPassword() == null || joinReqDto.getPassword().isEmpty()) {
-            throw new CustomException("password를 입력해주세요", HttpStatus.BAD_REQUEST);
+            throw new CustomException("password 를 입력해주세요", HttpStatus.BAD_REQUEST);
         }
         if (joinReqDto.getEmail() == null || joinReqDto.getEmail().isEmpty()) {
-            throw new CustomException("email 입력해주세요", HttpStatus.BAD_REQUEST);
+            throw new CustomException("email 를 입력해주세요", HttpStatus.BAD_REQUEST);
         }
         userService.회원가입(joinReqDto);
 
