@@ -20,7 +20,6 @@ public class UserService {
         int result = userRepository.insert(joinReqDto);
         if (result != 1) {
             throw new CustomException("회원가입 실패", HttpStatus.INTERNAL_SERVER_ERROR);
-
         }
     }
 }

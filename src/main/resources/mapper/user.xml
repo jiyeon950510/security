@@ -20,7 +20,7 @@
     </select>
 
     <insert id="insert">
-        insert into user_tb (username, password, email, created_at) values(#{username}, #{password}, #{email}, now())
+        insert into user_tb (username, password, email, role, created_at) values(#{username}, #{password}, #{email}, #{role}, now())
     </insert>
 
     <delete id="deleteById" >
