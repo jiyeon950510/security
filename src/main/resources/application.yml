@@ -5,6 +5,8 @@ sever:
     force: true
 
 spring:
+  jwt:
+#    secret:
   mvc:
     view:
       prefix: /WEB-INF/view/
