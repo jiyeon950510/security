@@ -1,6 +1,8 @@
 package com.jycoding.login.config.auth;
 
 import com.jycoding.login.model.User;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,6 +12,8 @@ import java.util.Collection;
 
 // Security Session => Authentication => UserDetails(PrincipalDetails)
 @Slf4j
+@Getter
+@Setter
 public class PrincipalDetails implements UserDetails {
 
     private User user;
@@ -21,22 +25,9 @@ public class PrincipalDetails implements UserDetails {
     // 해당 유저의 권한을 리턴하는 곳
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        Collection<GrantedAuthority> collect = new ArrayList<>();
-        collect.add(new GrantedAuthority() {
-            @Override
-            public String getAuthority() {
-                return user.getRole();
-            }
-
-            @Override
-            public String toString() {
-                return getAuthority();
-            }
-
-        });
-        // [ROLE_ADMIN]
-        log.info(collect.toString());
-        return collect;
+        Collection<GrantedAuthority> collector = new ArrayList<>();
+        collector.add(() -> user.getRole());
+        return collector;
     }
 
     @Override
