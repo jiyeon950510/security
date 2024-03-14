@@ -60,9 +60,6 @@
     - 리뷰/추천 `Review`
 
 ## ERD 
-[ERD Cloud](https://www.erdcloud.com/d/BXo7c4yv4q2XZLXAQ) 
-![Untitled (4)](https://github.com/jiyeon950510/newBlog/assets/122354247/2b389a46-e1ed-4988-970b-802f70f4a281)
-
 [![Untitled (4)](https://github.com/jiyeon950510/newBlog/assets/122354247/2b389a46-e1ed-4988-970b-802f70f4a281)](https://www.erdcloud.com/d/BXo7c4yv4q2XZLXAQ)
 
 
