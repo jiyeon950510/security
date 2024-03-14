@@ -66,5 +66,6 @@
 
 
 ## 잔디
+<img src="http://mazandi.herokuapp.com/api?handle=jiyeon950510&theme=warm"/> 
 <img src="http://mazandi.herokuapp.com/api?handle=jiyeon0510&theme=warm"/> 
 
