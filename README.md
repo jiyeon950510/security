@@ -65,7 +65,3 @@
 [![Untitled (4)](https://github.com/jiyeon950510/newBlog/assets/122354247/2b389a46-e1ed-4988-970b-802f70f4a281)](https://www.erdcloud.com/d/BXo7c4yv4q2XZLXAQ)
 
 
-## 잔디
-<img src="http://mazandi.herokuapp.com/api?handle=jiyeon950510&theme=warm"/> 
-<img src="http://mazandi.herokuapp.com/api?handle=jiyeon0510&theme=warm"/> 
-
